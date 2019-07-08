@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
 
     // Step 3 : Play the video
 
+    // video location
+    int myCurrentPositionInVideo = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,28 @@ public class MainActivity extends AppCompatActivity {
 
         video.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.harrypotter);
 
+        video.start();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        // store the position
+        myCurrentPositionInVideo = video.getCurrentPosition();
+
+        // pause the video
+        video.pause();
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        video.seekTo(myCurrentPositionInVideo);
+
+        // start the video
         video.start();
     }
 }
