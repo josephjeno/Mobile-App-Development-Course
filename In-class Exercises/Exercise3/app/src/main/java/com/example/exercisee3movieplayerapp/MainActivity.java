@@ -41,6 +41,17 @@ public class MainActivity extends AppCompatActivity {
         // pause the video
         video.pause();
 
+        //1. Create shared preferences - specify name and mode
+        preferences = getSharedPreferences("MyPreferences", MODE_PRIVATE);
+
+        //2. Create editor
+        SharedPreferences.Editor editor = preferences.edit();
+
+        //3. Write my dta to preferences
+        editor.putInt("lastPosition", myCurrentPositionInVideo);
+
+        //4. Save my changes to preferences file
+        editor.apply();
     }
 
     @Override
