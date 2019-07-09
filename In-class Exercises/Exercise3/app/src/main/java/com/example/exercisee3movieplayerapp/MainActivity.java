@@ -2,6 +2,7 @@ package com.example.exercisee3movieplayerapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.VideoView;
 
@@ -13,11 +14,13 @@ public class MainActivity extends AppCompatActivity {
 
     // Step 2 : Assign the video clip to the video view
 
-
     // Step 3 : Play the video
 
     // video location
     int myCurrentPositionInVideo = 0;
+
+    // Shared preferences variable
+    SharedPreferences preferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
 
         video.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.harrypotter);
 
+        //Restore from permanent file (shared preferences)
+        preferences = getSharedPreferences("MyPreferences", MODE_PRIVATE);
+        myCurrentPositionInVideo = preferences.getInt("lastPosition", 0);
+        video.seekTo(myCurrentPositionInVideo);
         video.start();
     }
 
