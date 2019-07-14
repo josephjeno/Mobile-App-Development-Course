@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Course Enrollment App</string>
+    <string name="courseName">Mobile App Development</string>
+    <string name="namePlaceholder">Enter name</string>
+    <string name="studentIDPlaceholder">Enter Student ID</string>
+    <string name="undergraduate">Undergraduate</string>
+    <string name="graduate">Graduate</string>
+    <string name="degreeProgramPlaceholder">Degree program</string>
+    <string name="enrollText">ENROLL</string>
 </resources>
