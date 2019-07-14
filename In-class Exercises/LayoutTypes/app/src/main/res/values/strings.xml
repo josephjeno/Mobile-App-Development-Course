@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Layout Types</string>
+    <string name="buttonName">Test Button</string>
+    <string name="title_activity_layout2">Layout2</string>
+</resources>
