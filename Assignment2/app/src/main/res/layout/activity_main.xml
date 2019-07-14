@@ -7,46 +7,66 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/carTypeTitleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="179dp"
+        android:layout_marginEnd="104dp"
         android:text="@string/car_selection_query"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="284dp" />
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
+        android:id="@+id/carTypeRadioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="189dp"
-        tools:layout_editor_absoluteY="349dp" >
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginEnd="155dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carTypeTitleTextView">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/sedanRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"
             android:text="@string/sedan" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/hatchbackRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
             android:text="@string/hatchback" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/suvRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
             android:text="@string/suv" />
     </RadioGroup>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/viewCarDetailsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="162dp"
         android:text="@string/view_car_button_text"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="540dp" />
+        android:onClick="viewCar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carTypeRadioGroup" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,8 +2,14 @@
     <string name="app_name">Assignment2</string>
     <string name="car_selection_query">Select car type</string>
     <string name="sedan">Sedan</string>
+    <string name="sedan_details">A sedan is a passenger car in a three-box configuration with separate compartments for engine, passenger, and cargo.</string>
+    <string name="sedan_website">https://www.bmwusa.com/vehicles/m-models/m5.html</string>
     <string name="hatchback">Hatchback</string>
+    <string name="hatchback_details">A hatchback is a car with a hatch-type rear door that opens upwards and often a shared volume for the passenger and cargo areas.</string>
+    <string name="hatchback_website">https://www.subaru.com/vehicles/impreza/index.html</string>
     <string name="suv">SUV</string>
+    <string name="suv_details">Sport utility vehicle (SUV) is a category of motor vehicles that combine elements of road-going passenger cars with features from off-road vehicles, such as raised ground clearance and four-wheel drive.</string>
+    <string name="suv_website">https://www.porsche.com/usa/models/cayenne/cayenne-models/cayenne/</string>
     <string name="view_car_button_text">View car</string>
     <string name="view_car_website_button">View car website</string>
 </resources>
