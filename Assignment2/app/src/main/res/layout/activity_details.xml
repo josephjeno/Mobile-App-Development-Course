@@ -6,4 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".DetailsActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_car_website_button"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="509dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
