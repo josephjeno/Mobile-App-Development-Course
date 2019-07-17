@@ -46,18 +46,40 @@ public class CustomCharacterAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
 
+        // Initialize View holder
+        ViewHolder viewHolder;
+
         if(view == null) {
-            //Create and return the view
+            // Create and return the view
             view = View.inflate(context, R.layout.character_info_adapter_item, null);
+
+            // Create an object of viewHolder -> get hold of my child view references
+            viewHolder = new ViewHolder();
+
+            viewHolder.imageView = view.findViewById(R.id.characterImgAdapterItem);
+            viewHolder.textView = view.findViewById(R.id.characterNameAdapterItem);
+
+            // Link the viewHolder to my view
+            view.setTag(viewHolder);
+        } else {
+            // If it already exists then restore the viewHolder -> from this I can access my image and text view
+            viewHolder = (ViewHolder) view.getTag();
         }
+
         // Grab the child view from your root view (Linear Layout)
-        ImageView imageView = view.findViewById(R.id.characterImgAdapterItem);
-        TextView textView = view.findViewById(R.id.characterNameAdapterItem);
+//        ImageView imageView = view.findViewById(R.id.characterImgAdapterItem);
+//        TextView textView = view.findViewById(R.id.characterNameAdapterItem);
 
         // Override the values of the child views -> Based on the input from the MainActivity
-        imageView.setImageResource(characterItems.get(i).getImageResID());
-        textView.setText(characterItems.get(i).getCharacterName());
+        viewHolder.imageView.setImageResource(characterItems.get(i).getImageResID());
+        viewHolder.textView.setText(characterItems.get(i).getCharacterName());
 
         return view;
+    }
+
+    // Class to hold my child views
+    static class ViewHolder{
+        ImageView imageView;
+        TextView textView;
     }
 }
