@@ -11,10 +11,13 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import utils.CharacterInfoAdapterItem;
+import utils.CustomCharacterAdapter;
+
 public class MainActivity extends AppCompatActivity {
 
     ListView listView;
-    ArrayList<String> favouriteCharacters = new ArrayList<String>();
+    ArrayList<CharacterInfoAdapterItem> favouriteCharacters = new ArrayList<CharacterInfoAdapterItem>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
         PopulateList();
 
         //Create an array adapter
-        ArrayAdapter myAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, favouriteCharacters);
+        //ArrayAdapter myAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, favouriteCharacters);
+        CustomCharacterAdapter myAdapter = new CustomCharacterAdapter(this, favouriteCharacters);
 
         //Connect the adapter to hte list view
         listView.setAdapter(myAdapter);
@@ -41,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, CharacterInfoActivity.class);
 
                 // Pass in the character name to second activity
-                intent.putExtra("CharacterName", favouriteCharacters.get(i));
+                intent.putExtra("CharacterName", favouriteCharacters.get(i).getCharacterName());
                 startActivity(intent);
             }
         });
@@ -49,9 +53,9 @@ public class MainActivity extends AppCompatActivity {
 
     //Add data into arrayList
     private void PopulateList(){
-        favouriteCharacters.add("Batman");
-        favouriteCharacters.add("Joker");
-        favouriteCharacters.add("Spiderman");
-        favouriteCharacters.add("Thanos");
+        favouriteCharacters.add(new CharacterInfoAdapterItem(R.drawable.batman, "Batman"));
+        favouriteCharacters.add(new CharacterInfoAdapterItem(R.drawable.joker, "Joker"));
+        favouriteCharacters.add(new CharacterInfoAdapterItem(R.drawable.spiderman, "Spiderman"));
+        favouriteCharacters.add(new CharacterInfoAdapterItem(R.drawable.thanos, "Thanos"));
     }
 }
