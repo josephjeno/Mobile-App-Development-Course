@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">Assignment3</string>
+    <string name="book1_name">What if...?</string>
+    <string name="book1_description">Essays by respected military historians, including Stephen Ambrose, David McCullough, James McPherson, and John Keegan, consider the consequences if history had turned out differently, such as if the weather on D-Day had been worse or if Washington had not escaped from Long Island.</string>
+    <string name="book2_name">Classical Mythology</string>
+    <string name="book2_description">Building on the best-selling tradition of previous editions, Classical Mythology, Eleventh Edition, is the most comprehensive survey of classical mythology available.</string>
+    <string name="book3_name">Clara Callan</string>
+    <string name="book3_description">Richard B. Wright\'s celebrated novel Clara Callan is the powerful, moving story of two sisters and their life-changing experiences on the eve of World War II.</string>
+    <string name="book4_name">Flu: The Story of the Great Influenza Pandemic of 1918 and the Search for the Virus That Caused It</string>
+    <string name="book4_description">A national bestseller, the fast-paced and gripping account of the Great Flu Epidemic of 1918 from acclaimed science journalist Gina Kolata, now featuring a new epilogue about avian flu.</string>
+    <string name="book5_name">The Mummies of Urumchi</string>
+    <string name="book5_description">In the museums of Ürümchi, the windswept regional capital of the Uyghur Autonomous Region (also known as Chinese Turkestan), a collection of ancient mummies lies at the center of an enormous mystery.</string>
+    <string name="book6_name">Where you\'ll find me and other stories</string>
+    <string name="book6_description">Luella King has experienced loss all her life. After losing her parents and the most important person in her life, she always plays it safe. Until the night she gives in to a sexy stranger.</string>
+    <string name="book7_name">Nights Below Station Street</string>
+    <string name="book7_description">Nights Below Station Street is a novel by David Adams Richards, published in 1988. It was the first volume in his Miramichi trilogy, which also included the novels Evening Snow Will Bring Such Peace and For Those Who Hunt the Wounded Down. The novel centres on the Walshes, a rural New Brunswick family in the 1970s.</string>
+    <string name="book8_name">The Middle Stories</string>
+    <string name="book8_description">Wildly acclaimed in Canada, this book marks the debut of a remarkable young writer first published by McSweeney\'s when she was twenty-three and living at home with her dad and brother. The Middle Stories is a strikingly original collection of stories, fables, and short brutalities that are alternately heartwarming, cruel, and hilarious.</string>
+    <string name="book9_name">A Second Chicken Soup for the Woman\'s Soul (Chicken Soup for the Soul Series)</string>
+    <string name="book9_description">This latest collection of stories celebrates the shared experiences of being a woman in a 101 new ways. You will be moved by these true accounts of how women like you have embraced life\'s defining moments by finding love, dealing with loss, overcoming obstacles and achieving their dreams and goals.</string>
+    <string name="book10_name">More Cunning Than Man: A Social History of Rats and Man</string>
+    <string name="book10_description">Filled with rat attack stories, strange tales of elderly women living with rats, and other interesting information, a fascinating foray into the world of the rat examines the way these creatures have survived through the ages despite many attempts to annihilate them.</string>
+    <string name="book11_name">The Testament</string>
+    <string name="book11_description">Troy Phelan is a self-made billionaire, one of the richest men in the United States.  He is also eccentric, reclusive, confined to a wheelchair, and looking for a way to die.</string>
+    <string name="book12_name">Beloved (Plume Contemporary Fiction)</string>
+    <string name="book12_description">Sethe, an escaped slave living in post-Civil War Ohio with her daughter and mother-in-law, is persistantly haunted by the ghost of her dead baby girl.</string>
+    <string name="book13_name">Our Dumb Century: The Onion Presents 100 Years of Headlines from America\'s Finest News Source</string>
+    <string name="book13_description">Our Dumb Century, first published in 1999, was The Onion’s first bound volume, and now, in this exceptionally packaged deluxe edition, it will be the crowning pinnacle of your Onion book collection.</string>
+    <string name="book14_name">New Vegetarian: Bold and Beautiful Recipes for Every Occasion</string>
+    <string name="book14_description">Lifts meat-free cooking out of the doldrums and gives it a new lease of life. Bold, bright and beautiful.</string>
+    <string name="book15_name">If I\'d Known Then What I Know Now: Why Not Learn from the Mistakes of Others? : You Can\'t Afford to Make Them All Yourself</string>
+    <string name="book15_description">If I\'d Known Then What I Know Now is an inspiring, Pay It Forward-type manifesto for achieving success and happiness from childhood to retirement.</string>
+    <string name="book_cover">Book Cover</string>
 </resources>
